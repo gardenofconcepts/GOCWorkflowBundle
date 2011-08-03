@@ -4,17 +4,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
     <parameters>
-        <parameter key="goc_workflow.example.class">GOC\WorkflowBundle\Example</parameter>
+        <parameter key="goc_workflow.manager.class">GOC\WorkflowBundle\WorkflowManager</parameter>
     </parameters>
 
     <services>
-        <service id="goc_workflow.example" class="%goc_workflow.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="goc_workflow.manager" class="%goc_workflow.manager.class%">
+            <argument type="service" id="service_container" />
         </service>
     </services>
-    -->
+
 </container>

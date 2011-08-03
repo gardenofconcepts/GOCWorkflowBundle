@@ -1,0 +1,8 @@
+<h1>WorkflowBundle: {{ workflow.definition.name }}</h1>
+
+<form action="" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+
+    <button name="submit[previous]" type="submit">Previous</button>
+    <button name="submit[next]" type="submit">Next</button>
+</form>
