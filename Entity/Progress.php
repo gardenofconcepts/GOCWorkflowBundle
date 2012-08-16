@@ -28,17 +28,17 @@ class Progress
     private $name;
 
     /**
-     * @ORM\Column(type="integer", scale="1")
+     * @ORM\Column(type="integer")
      */
     private $status = self::STATUS_COMPLETE;
 
     /**
-     * @ORM\Column(type="integer", scale="10", nullable=true)
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $owner;
 
     /**
-     * @ORM\Column(type="integer", scale="10", nullable=true)
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $actor;
 
