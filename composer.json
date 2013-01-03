@@ -2,9 +2,12 @@
     "name": "goc/workflow-bundle",
     "description": "Simple workflow or wizard system for Symfony 2",
     "type": "library",
-    "homepage": "https://github.com/gardenofconcepts/GOCWorkflowBundle.git",
+    "homepage": "https://github.com/gardenofconcepts/GOCWorkflowBundle",
     "require": {
         "php": ">=5.3.2"
     },
-    "target-dir": "GOC/WorkflowBundle"
+    "target-dir": "GOC/WorkflowBundle",
+    "autoload": {
+        "psr-0": { "GOC\\WorkflowBundle": "" }
+    }
 }
